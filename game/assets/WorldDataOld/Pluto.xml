@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorldTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WorldName>Pluto</WorldName>
+  <WorldSystem>Plutonian</WorldSystem>
+  <SolarSystem>Common</SolarSystem>
+  <MenuDescription>Is still a planet...</MenuDescription>
+  <ThumbnailContentPath>Sprites\\Menus\\Worlds\\Pluto001</ThumbnailContentPath>
+</WorldTemplate>

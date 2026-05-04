@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorldTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WorldName>Nix</WorldName>
+  <WorldSystem>Plutonian</WorldSystem>
+  <SolarSystem>Common</SolarSystem>
+  <MenuDescription>Small moon</MenuDescription>
+  <ThumbnailContentPath>Sprites\\Menus\\Worlds\\Earth001</ThumbnailContentPath>
+</WorldTemplate>

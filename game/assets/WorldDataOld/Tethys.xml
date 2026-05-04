@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorldTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WorldName>Tethys</WorldName>
+  <WorldSystem>Saturnian</WorldSystem>
+  <SolarSystem>Common</SolarSystem>
+  <MenuDescription>Large ball of ice covered in dust.</MenuDescription>
+  <ThumbnailContentPath>Sprites\\Menus\\Worlds\\Tethys001</ThumbnailContentPath>
+</WorldTemplate>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SolarTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WorldSystems>
+    <WorldSystemTemplate>
+      <Worlds>
+        <WorldTemplate>
+          <WorldName>Ceres</WorldName>
+          <WorldSystem>Cereian</WorldSystem>
+          <SolarSystem>Common</SolarSystem>
+          <MenuDescription>Large dusty dwarf planet encompassed by asteroids.</MenuDescription>
+          <ThumbnailContentPath>Sprites\\Menus\\Worlds\\Earth001</ThumbnailContentPath>
+          <TerrainTexture>
+            <TextureFilters />
+            <FilterParameters />
+            <Width>0</Width>
+            <Height>0</Height>
+            <BaseHue>1</BaseHue>
+            <BaseSaturation>1</BaseSaturation>
+            <BaseValue>1</BaseValue>
+          </TerrainTexture>
+          <Textures />
+        </WorldTemplate>
+      </Worlds>
+      <NameOfWorldSystem>Cereian</NameOfWorldSystem>
+      <DistanceFromSun>0</DistanceFromSun>
+    </WorldSystemTemplate>
+    <WorldSystemTemplate>
+      <Worlds>
+        <WorldTemplate>
+          <WorldName>Deimos</WorldName>
+          <WorldSystem>Martian</WorldSystem>
+          <SolarSystem>Common</SolarSystem>
+          <MenuDescription>Tiny asteroid which orbits Mars.</MenuDescription>
+          <ThumbnailContentPath>Sprites\\Menus\\Worlds\\Deimos001</ThumbnailContentPath>
+          <TerrainTexture>
+            <TextureFilters />
+            <FilterParameters />
+            <Width>0</Width>
+            <Height>0</Height>
+            <BaseHue>1</BaseHue>
+            <BaseSaturation>1</BaseSaturation>
+            <BaseValue>1</BaseValue>
+          </TerrainTexture>
+          <Textures />
+        </WorldTemplate>
+        <WorldTemplate>
+          <WorldName>Mars</WorldName>
+          <WorldSystem>Martian</WorldSystem>
+          <SolarSystem>Common</SolarSystem>
+          <MenuDescription>None</MenuDescription>
+          <ThumbnailContentPath>Sprites\\Menus\\Worlds\\Mars001</ThumbnailContentPath>
+          <TerrainTexture>
+            <TextureFilters />
+            <FilterParameters />
+            <Width>0</Width>
+            <Height>0</Height>
+            <BaseHue>1</BaseHue>
+            <BaseSaturation>1</BaseSaturation>
+            <BaseValue>1</BaseValue>
+          </TerrainTexture>
+          <Textures />
+        </WorldTemplate>
+        <WorldTemplate>
+          <WorldName>Deimos</WorldName>
+          <WorldSystem>Martian</WorldSystem>
+          <SolarSystem>Common</SolarSystem>
+          <MenuDescription>Tiny asteroid which orbits Mars.</MenuDescription>
+          <ThumbnailContentPath>Sprites\\Menus\\Worlds\\Deimos001</ThumbnailContentPath>
+          <TerrainTexture>
+            <TextureFilters />
+            <FilterParameters />
+            <Width>0</Width>
+            <Height>0</Height>
+            <BaseHue>1</BaseHue>
+            <BaseSaturation>1</BaseSaturation>
+            <BaseValue>1</BaseValue>
+          </TerrainTexture>
+          <Textures />
+        </WorldTemplate>
+      </Worlds>
+      <NameOfWorldSystem>Martian</NameOfWorldSystem>
+      <DistanceFromSun>0</DistanceFromSun>
+    </WorldSystemTemplate>
+    <WorldSystemTemplate>
+      <Worlds>
+        <WorldTemplate>
+          <WorldName>Oberon</WorldName>
+          <WorldSystem>Uranian</WorldSystem>
+          <SolarSystem>Common</SolarSystem>
+          <MenuDescription>Exposed to large amounts of solar wind.</MenuDescription>
+          <ThumbnailContentPath>Sprites\\Menus\\Worlds\\Oberon001</ThumbnailContentPath>
+          <TerrainTexture>
+            <TextureFilters />
+            <FilterParameters />
+            <Width>0</Width>
+            <Height>0</Height>
+            <BaseHue>1</BaseHue>
+            <BaseSaturation>1</BaseSaturation>
+            <BaseValue>1</BaseValue>
+          </TerrainTexture>
+          <Textures />
+        </WorldTemplate>
+      </Worlds>
+      <NameOfWorldSystem>Uranian</NameOfWorldSystem>
+      <DistanceFromSun>0</DistanceFromSun>
+    </WorldSystemTemplate>
+  </WorldSystems>
+</SolarTemplate>

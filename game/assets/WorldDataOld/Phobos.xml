@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorldTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WorldName>Phobos</WorldName>
+  <WorldSystem>Martian</WorldSystem>
+  <SolarSystem>Common</SolarSystem>
+  <MenuDescription>Small martian moon.</MenuDescription>
+  <ThumbnailContentPath>Sprites\\Menus\\Worlds\\Phobos001</ThumbnailContentPath>
+</WorldTemplate>

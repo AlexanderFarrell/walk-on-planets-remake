@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorldTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WorldName>Deimos</WorldName>
+  <WorldSystem>Martian</WorldSystem>
+  <SolarSystem>Common</SolarSystem>
+  <MenuDescription>Tiny asteroid which orbits Mars.</MenuDescription>
+  <ThumbnailContentPath>Sprites\\Menus\\Worlds\\Deimos001</ThumbnailContentPath>
+</WorldTemplate>

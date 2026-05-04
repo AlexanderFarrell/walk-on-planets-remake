@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WorldTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WorldName>Venus</WorldName>
+  <WorldSystem>Venusian</WorldSystem>
+  <SolarSystem>Common</SolarSystem>
+  <MenuDescription>Somehow female.</MenuDescription>
+  <ThumbnailContentPath>Sprites\\Menus\\Worlds\\Venus001</ThumbnailContentPath>
+</WorldTemplate>
