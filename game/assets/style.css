@@ -1,8 +1,10 @@
 body {
 	margin: 0;
+	font-size: 25px;
 	overflow: hidden;
 	color: white;
-	text-shadow: 1px 1px 1px black;
+	text-shadow: 0px 0px 2px rgb(0, 0, 0);
+	font-family: sans-serif;
 }
 
 canvas {
@@ -23,4 +25,59 @@ canvas {
 	bottom: 0;
 	z-index: 10;
 	display: grid;
+}
+
+#parentContainer {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	display: grid;
+	grid-template-rows: 1fr auto;
+
+	padding: 20px;
+	color: rgb(251, 255, 132);
+}
+
+#titleContainer {
+	text-align: center;
+}
+
+.row {
+	display: flex;
+}
+
+#worldContainer {
+	flex: 1;
+	display: grid;
+	text-align: right;
+}
+
+#playerContainer {
+	flex: 1;
+}
+
+#main_menu, #pause_menu {
+	place-self: center;
+	z-index: 20;
+}
+
+#main_menu, #pause_menu {
+	color: yellow;
+}
+
+#main_menu button, #pause_menu button {
+	color: rgb(255, 255, 255);
+	background-color: rgb(80, 80, 80);
+	outline: none;
+	border: 1px solid black;
+	margin: 5px 0;
+	width: 100%;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#main_menu button:hover, #pause_menu button:hover {
+	background-color: rgb(67, 67, 67);
 }
