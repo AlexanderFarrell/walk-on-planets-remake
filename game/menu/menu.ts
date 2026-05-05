@@ -17,6 +17,10 @@ export class MenuStage extends Stage {
         ui.innerHTML = `
         <h1>Walk on Planets</h1>
         <div id="planets"></div>
+        <div>
+            <button style="width: auto">Fullscreen</button>
+        </div>
+
         `
 
         let planets_container = ui.querySelector('#planets');
@@ -25,8 +29,11 @@ export class MenuStage extends Stage {
             let button = document.createElement('button');
             button.innerHTML = `<img src="${world.imageURL}"><div>${world.name}</div>`
             button.addEventListener('click', () => {
-                WorldManager.current = world;
-                Engine.app.requestSwitchTo('Play');
+                ui.innerHTML = `<div class="center">Loading ${world.name}...</div>`
+                setTimeout(() => {
+                    WorldManager.current = world;
+                    Engine.app.requestSwitchTo('Play');
+                }, 20)
             })
             planets_container?.appendChild(button);
         })

@@ -210,12 +210,12 @@ export const Worlds: World[] = [
         imageURL: Unknown,
         satellite: [
             {
-                name: "Eris",
-                size: 150,
+                name: "Dysnomia",
+                size: 100,
                 imageURL: Unknown
             }
         ],
-        terrainColor: [0.1, 0.1, 0.1],
+        terrainColor: [0.75, 0.75, 0.78],
         skyColor: [0, 0, 0],
         skyThickness: 0,
         terrainRoughness: 0.70,
@@ -236,8 +236,8 @@ export const Worlds: World[] = [
             }
         ],
         terrainColor: [0.8, 0.8, 0.83],
-        skyColor: [0, 0, 0.9],
-        skyThickness: 0.1,
+        skyColor: [0, 0, 0],
+        skyThickness: 0.0,
         terrainRoughness: 0.95,
         terrainAltitude: 200,
         gravity: 1.314
@@ -256,8 +256,8 @@ export const Worlds: World[] = [
             }
         ],
         terrainColor: [0.4, 0.4, 0.4],
-        skyColor: [0.1, 0.0, 0.0],
-        skyThickness: 0.2,
+        skyColor: [0.0, 0.0, 0.0],
+        skyThickness: 0.0,
         terrainRoughness: 0.60,
         terrainAltitude: 240,
         gravity: 1.4819
@@ -373,11 +373,17 @@ export const Worlds: World[] = [
     {
         name: "Mars",
         description: "Contains the tallest volcano in the Solar System",
+        surfaceTemp: 205,
         imageURL: Mars,
         satellite: [
             {
                 name: "Phobos",
-                size: 1,
+                size: 10,
+                imageURL: Deimos
+            },
+            {
+                name: "Phobos",
+                size: 2,
                 imageURL: Deimos
             }
         ],
@@ -386,10 +392,22 @@ export const Worlds: World[] = [
         skyThickness: 0.9,
         terrainRoughness: 0.80,
         terrainAltitude: 100,
-        gravity: 3.72076
+        gravity: 3.72076,
+        atmosphere: {
+            pressureAtms: 0.00628,
+            composition: [
+                {name: "Carbon Dioxide", percent: 95.97},
+                {name: "Argon", percent: 1.93},
+                {name: "Nitrogen", percent: 1.89},
+                {name: "Oxygen", percent: 0.146},
+                {name: "Carbon Monoxide", percent: 0.0557},
+                {name: "Water Vapor", percent: 0.0210}
+            ]
+        }
     },
     {
         name: "Mercury",
+        surfaceTemp: 427+273.15,
         description: "Hot & cold to the extreme",
         imageURL: Mercury,
         satellite: [
@@ -400,14 +418,27 @@ export const Worlds: World[] = [
             }
         ],
         terrainColor: [0.6, 0.5, 0.5],
-        skyColor: [0.8, 0.1, 0.1],
-        skyThickness: 0.1,
+        skyColor: [0.0, 0.0, 0.0],
+        skyThickness: 0.0,
         terrainRoughness: 0.90,
         terrainAltitude: 120,
-        gravity: 3.7
+        gravity: 3.7,
+        atmosphere: {
+            pressureAtms: 0.00001, // Trace,
+            composition: [
+                {name: "Oxygen", percent: 0},
+                {name: "Sodium", percent: 0},
+                {name: "Magnesium", percent: 0},
+                {name: "Hydrogen", percent: 0},
+                {name: "Potassium", percent: 0},
+                {name: "Calcium", percent: 0},
+                {name: "Helium", percent: 0}
+            ]
+        }
     },
     {
         name: "Oberon",
+        surfaceTemp: 75,
         description: "Exposed to large amounts of solar wind",
         imageURL: Oberon,
         satellite: [
@@ -426,6 +457,116 @@ export const Worlds: World[] = [
     },
     {
         name: "Phobos",
-        description: ""
+        description: "Small martian moon",
+        surfaceTemp: 233,
+        imageURL: Phobos,
+        satellite: [
+            {
+                name: "Mars",
+                size: 200,
+                imageURL: Mars
+            }
+        ],
+        terrainColor: [0.7, 0.5, 0.5],
+        skyColor: [0,0,0],
+        skyThickness: 0,
+        terrainRoughness: 0.70,
+        terrainAltitude: 120,
+        gravity: 0.0057
+    },
+    {
+        name: "Pluto",
+        description: "Is still a planet...",
+        surfaceTemp: 44,
+        imageURL: Pluto,
+        satellite: [
+            {
+                name: "Charon",
+                size: 200,
+                imageURL: Charon
+            }
+        ],
+        terrainColor: [0.8, 0.5, 0.5],
+        skyColor: [0.15,0.12,0.10],
+        skyThickness: 0.08,
+        terrainRoughness: 0.95,
+        terrainAltitude: 150,
+        gravity: 0.620,
+        atmosphere: {
+            pressureAtms: 0.0000099,
+            composition: [
+                {name: "Nitrogen", percent: 0},
+                {name: "Methane", percent: 0},
+                {name: "Carbon Monoxide", percent: 0}
+            ]
+        }
+    },
+    {
+        name: "Proteus",
+        description: "One side smooth, other side cratered",
+        planetSystem: "Neptunian",
+        surfaceTemp: 51,
+        imageURL: Proteus,
+        satellite: [
+            {
+                name: "Neptune",
+                size: 200,
+                imageURL: Neptune
+            }
+        ],
+        terrainColor: [0.12, 0.12, 0.1],
+        terrainAltitude: 250,
+        terrainRoughness: 0.75,
+        gravity: 0.023,
+        skyColor: [0,0,0],
+        skyThickness: 0
+    },
+    {
+        name: "Tethys",
+        description: "Large ball of ice covered in dust",
+        planetSystem: "Saturnian",
+        surfaceTemp: 86,
+        imageURL: Tethys,
+        satellite: [
+            {
+                name: "Saturn",
+                size: 200,
+                imageURL: Saturn
+            }
+        ],
+        terrainColor: [0.92, 0.92, 0.84],
+        terrainAltitude: 150,
+        terrainRoughness: 0.90,
+        gravity: 0.146,
+        skyColor: [0,0,0],
+        skyThickness: 0
+    },
+    {
+        name: "Triton",
+        imageURL: Triton,
+        description: "Very dramatic moon",
+        planetSystem: "Neptunian",
+        surfaceTemp: 38,
+        satellite: [
+            {
+                name: "Neptune",
+                size: 200,
+                imageURL: Neptune
+            }
+        ],
+        terrainColor: [0.82, 0.72, 0.69],
+        terrainAltitude: 150,
+        terrainRoughness: 0.90,
+        gravity: 0.779,
+        skyColor: [1,1,1],
+        skyThickness: 0.2,
+        atmosphere: {
+            pressureAtms: 0.0000138,
+            composition: [
+                {name: "Nitrogen", percent: 0},
+                {name: "Methane", percent: 0},
+                {name: "Carbon Monoxide", percent: 0}
+            ]
+        }
     }
 ]

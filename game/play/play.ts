@@ -163,7 +163,7 @@ class AirTimeTracker extends Component implements Updatable {
             `<div>Planet System: ${WorldManager.current.planetSystem}</div>` :
             ''
         }
-        <div>Description: ${WorldManager.current.planetSystem}</div>
+        <div>Description: ${WorldManager.current.description}</div>
         <div>Temperature: ${displayTemp(WorldManager.current.surfaceTemp)}</div>
         <div>Gravity:     ${Engine.physics.gravity[1]} m/s</div>
         <div>${atmosphereToString(WorldManager.current.atmosphere)}</div>
@@ -217,7 +217,7 @@ function atmosphereToString(atmosphere: Atmosphere | undefined) {
         return ""
     }
 
-    return `Atmosphere: ${atmosphere!.pressureAtms} ATMs (Earth's Atmospheric Pressure at Sea Level)<br>
+    return `Atmosphere: ${atmosphere!.pressureAtms} ATMs<br>
     ${atmosphere!.composition.map(c => {
         return `${c.percent.toFixed(1)}% ${c.name}`
     }).join('<br>')}
