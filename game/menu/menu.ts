@@ -15,7 +15,11 @@ export class MenuStage extends Stage {
 
         let ui = Engine.ui.UiContainer;
         ui.innerHTML = `
-        <h1>Walk on Planets</h1>
+        <div>
+            <h1>Walk on Planets</h1>
+            <p>Click on any world to visit. Walk with WASD and mouse. Jump with space. Press o to thrust down (if too little gravity).</p>
+            <p>If your mouse is stuck press ESC</p>
+        </div>
         <div id="planets"></div>
         <div>
         <button id="fullscreen_btn" title="Toggle Fullscreen">Fullscreen</button>

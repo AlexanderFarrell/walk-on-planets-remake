@@ -163,7 +163,7 @@ class AirTimeTracker extends Component implements Updatable {
             `<div>Planet System: ${WorldManager.current.planetSystem}</div>` :
             ''
         }
-        <div>Description: ${WorldManager.current.description}</div>
+        <div>${WorldManager.current.description}</div>
         <div>Temperature: ${displayTemp(WorldManager.current.surfaceTemp)}</div>
         <div>Gravity:     ${Engine.physics.gravity[1]} m/s</div>
         <div>${atmosphereToString(WorldManager.current.atmosphere)}</div>
@@ -186,6 +186,8 @@ class AirTimeTracker extends Component implements Updatable {
             <div>X: ${this._playerLoc.X.toFixed(1)}</div>
             <div>Y: ${this._playerLoc.Y.toFixed(1)}</div>
             <div>Z: ${this._playerLoc.Z.toFixed(1)}</div>
+            <div>Controls: WASD move. O to trust down.</div>
+            <div>Space to jump. ESC to pause/leave.</div>
             `
         }
         // this.step++;

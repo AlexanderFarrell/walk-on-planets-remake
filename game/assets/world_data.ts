@@ -486,7 +486,7 @@ export const Worlds: World[] = [
                 imageURL: Charon
             }
         ],
-        terrainColor: [0.8, 0.5, 0.5],
+        terrainColor: [0.6, 0.5, 0.5],
         skyColor: [0.15,0.12,0.10],
         skyThickness: 0.08,
         terrainRoughness: 0.95,
