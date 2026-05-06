@@ -18,10 +18,14 @@ export class MenuStage extends Stage {
         <h1>Walk on Planets</h1>
         <div id="planets"></div>
         <div>
-            <button style="width: auto">Fullscreen</button>
+        <button id="fullscreen_btn" title="Toggle Fullscreen">Fullscreen</button>
         </div>
-
         `
+
+        ui.querySelector('#fullscreen_btn')!.addEventListener('click', () => {
+            if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+            else document.exitFullscreen();
+        });
 
         let planets_container = ui.querySelector('#planets');
 

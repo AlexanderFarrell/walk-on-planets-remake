@@ -2,7 +2,6 @@ import Unknown from "./WorldSprites/Earth001.png";
 import Callisto from './WorldSprites/Callisto001.png';
 import Charon from "./WorldSprites/Charon001.png";
 import Deimos from "./WorldSprites/Deimos001.png";
-import Earth from "./WorldSprites/Earth001.png";
 import Europa from "./WorldSprites/Europa001.png";
 import Ganymede from "./WorldSprites/Ganymede001.png";
 import Hyperion from "./WorldSprites/Hyperion001.png";
@@ -23,6 +22,7 @@ import Triton from "./WorldSprites/Triton001.png";
 import Uranus from "./WorldSprites/Uranus001.png";
 import Venus from "./WorldSprites/Venus001.png";
 import Sun from "./WorldSprites/SunSprite.png"
+import Earth from "./WorldSprites/earth.png"
 
 export interface Satellites {
     name: string,
@@ -63,12 +63,12 @@ export const Worlds: World[] = [
         planetSystem: "Terrestrial",
         surfaceTemp: 250,
         description: "Made entirely of cheese",
-        imageURL: Unknown,
+        imageURL: Charon,
         satellite: [
             {
                 name: "Earth",
-                size: 5,
-                imageURL: Unknown
+                size: 30,
+                imageURL: Earth
             }
         ],
         terrainColor: [0.7, 0.7, 0.7],
@@ -76,7 +76,7 @@ export const Worlds: World[] = [
         skyThickness: 0,
         terrainRoughness: 0.85,
         terrainAltitude: 80,
-        gravity: 0.165,
+        gravity: 1.622,
     },
     {
         name: "Callisto",
@@ -123,25 +123,25 @@ export const Worlds: World[] = [
         terrainAltitude: 80,
         gravity: 1.796
     },
-    {
-        name: "Ceres",
-        surfaceTemp: 172.5,
-        description: "Large dusty dwarf planet encompassed by asteroids",
-        imageURL: Unknown,
-        satellite: [
-            {
-                name: "Sun",
-                size: 50,
-                imageURL: Sun
-            }
-        ],
-        terrainColor: [0.5, 0.5, 0.5],
-        skyColor: [0, 0, 0],
-        skyThickness: 0,
-        terrainRoughness: 0.75,
-        terrainAltitude: 120,
-        gravity: 0.284
-    },
+    // {
+    //     name: "Ceres",
+    //     surfaceTemp: 172.5,
+    //     description: "Large dusty dwarf planet encompassed by asteroids",
+    //     imageURL: Unknown,
+    //     satellite: [
+    //         {
+    //             name: "Sun",
+    //             size: 50,
+    //             imageURL: Sun
+    //         }
+    //     ],
+    //     terrainColor: [0.5, 0.5, 0.5],
+    //     skyColor: [0, 0, 0],
+    //     skyThickness: 0,
+    //     terrainRoughness: 0.75,
+    //     terrainAltitude: 120,
+    //     gravity: 0.284
+    // },
     {
         name: "Charon",
         planetSystem: "Plutonian",
@@ -182,46 +182,46 @@ export const Worlds: World[] = [
         terrainAltitude: 40,
         gravity: 0.003
     },
-    {
-        name: "Dysnomia",
-        planetSystem: "Eridian",
-        surfaceTemp: 42,
-        description: "Small eridian moon.",
-        imageURL: Unknown,
-        satellite: [
-            {
-                name: "Eris",
-                size: 150,
-                imageURL: Unknown
-            }
-        ],
-        terrainColor: [0.1, 0.1, 0.1],
-        skyColor: [0, 0, 0],
-        skyThickness: 0,
-        terrainRoughness: 0.70,
-        terrainAltitude: 80,
-        gravity: 0.07
-    },
-    {
-        name: "Eris",
-        planetSystem: "Eridian",
-        surfaceTemp: 42,
-        description: "Large dwarf planet far from the sun.",
-        imageURL: Unknown,
-        satellite: [
-            {
-                name: "Dysnomia",
-                size: 100,
-                imageURL: Unknown
-            }
-        ],
-        terrainColor: [0.75, 0.75, 0.78],
-        skyColor: [0, 0, 0],
-        skyThickness: 0,
-        terrainRoughness: 0.70,
-        terrainAltitude: 80,
-        gravity: 0.82
-    },
+    // {
+    //     name: "Dysnomia",
+    //     planetSystem: "Eridian",
+    //     surfaceTemp: 42,
+    //     description: "Small eridian moon.",
+    //     imageURL: Unknown,
+    //     satellite: [
+    //         {
+    //             name: "Eris",
+    //             size: 150,
+    //             imageURL: Unknown
+    //         }
+    //     ],
+    //     terrainColor: [0.1, 0.1, 0.1],
+    //     skyColor: [0, 0, 0],
+    //     skyThickness: 0,
+    //     terrainRoughness: 0.70,
+    //     terrainAltitude: 80,
+    //     gravity: 0.07
+    // },
+    // {
+    //     name: "Eris",
+    //     planetSystem: "Eridian",
+    //     surfaceTemp: 42,
+    //     description: "Large dwarf planet far from the sun.",
+    //     imageURL: Unknown,
+    //     satellite: [
+    //         {
+    //             name: "Dysnomia",
+    //             size: 100,
+    //             imageURL: Unknown
+    //         }
+    //     ],
+    //     terrainColor: [0.75, 0.75, 0.78],
+    //     skyColor: [0, 0, 0],
+    //     skyThickness: 0,
+    //     terrainRoughness: 0.70,
+    //     terrainAltitude: 80,
+    //     gravity: 0.82
+    // },
     {
         name: "Europa",
         planetSystem: "Jovian",
@@ -302,12 +302,12 @@ export const Worlds: World[] = [
     },
     {
         name: "Venus",
-        description: "Somehow female?",
+        description: "Hellscape",
         imageURL: Venus,
         surfaceTemp: 737,
         satellite: [],
-        terrainColor: [0.2, 0.2, 0.0],
-        skyColor: [0.3, 0.3, 0.0],
+        terrainColor: [0.2, 0.1, 0.0],
+        skyColor: [0.24, 0.1, 0.0],
         skyThickness: 1.0,
         terrainRoughness: 0.80,
         terrainAltitude: 80,
